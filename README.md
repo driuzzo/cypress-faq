@@ -30,11 +30,11 @@ Cypress.on('uncaught:exception', (err, runnable) => {
 ```
 ### Quando devo usar esta abordagem?
 
-Esta abordagem deve ser usada com cuidado. Ignorar exceções pode ocultar problemas reais no seu aplicativo que precisam ser corrigidos. Use-a principalmente quando você está ciente de um erro conhecido que não afeta os testes que você está executando.
+Esta abordagem deve ser usada com cuidado. Ignorar exceções pode ocultar problemas reais que precisam ser corrigidos na sua aplicação. Use se você sabe que é um erro conhecido que não afeta os testes que você está executando.
 
 ### Há alguma alternativa para lidar com exceções específicas?
 
-Sim, se você quiser lidar com exceções específicas, pode adicionar lógica dentro da função de callback para filtrar erros com base em suas mensagens ou outros atributos:
+Sim, se você quiser lidar com exceções específicas, você pode adicionar lógica dentro da função de callback para filtrar erros dependendo da mensagem ou outros atributos:
 
 ```javascript
 Cypress.on('uncaught:exception', (err, runnable) => {
@@ -48,7 +48,7 @@ Cypress.on('uncaught:exception', (err, runnable) => {
 ```
 ### Exemplo Prático
 
-Aqui está um exemplo prático que ignora um erro específico de uma biblioteca de terceiros, mas permite que outras exceções interrompam os testes:
+O exemplo abaixo ignora um erro específico de uma biblioteca de terceiros, mas permite que outras exceções interrompam os testes:
 
 ```javascript
 Cypress.on('uncaught:exception', (err, runnable) => {

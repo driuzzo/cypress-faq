@@ -1,4 +1,16 @@
-# cypress-faq
+## Cypress FAQ
+
+Este documento foi criado para ajudar a solucionar os problemas mais comuns ao usar o Cypress. Se você não encontrar a resposta para sua pergunta aqui, fique à vontade para dar sugestões!
+
+## Geral
+### O Cypress não abre após a instalação.
+
+Certifique-se de que você tenha a versão mínima necessária do Node.js e npm. Além disso, tente deletar a pasta `node_modules` e o arquivo `package-lock.json`, e então reinstale as dependências:
+
+```bash
+rm -rf node_modules package-lock.json
+npm install
+```
 
 ## Lidando com Exceções Não Capturadas
 

@@ -30,7 +30,7 @@ Cypress.on('uncaught:exception', (err, runnable) => {
 ```
 ### Quando devo usar esta abordagem?
 
-Esta abordagem deve ser usada com cuidado. Ignorar exceções pode ocultar problemas reais que precisam ser corrigidos na sua aplicação. Use se você sabe que é um erro conhecido que não afeta os testes que você está executando.
+Essa abordagem deve ser usada com cuidado. Ignorar exceções pode ocultar problemas reais que precisam ser corrigidos na sua aplicação. Use se você sabe que é um erro conhecido que não afeta os testes que você está executando.
 
 ### Há alguma alternativa para lidar com exceções específicas?
 

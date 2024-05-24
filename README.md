@@ -38,7 +38,7 @@ Sim, se você quiser lidar com exceções específicas, pode adicionar lógica d
 
 ```javascript
 Cypress.on('uncaught:exception', (err, runnable) => {
-  // Ignore exceções específicas com base na mensagem de erro
+  // Ignora exceções específicas com base na mensagem de erro
   if (err.message.includes('Expected error message')) {
     return false
   }

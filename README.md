@@ -14,7 +14,7 @@ npm install
 
 ## Lidando com Exceções Não Capturadas
 
-### O Cypress encontra uncaught excpetion durante a execução dos testes
+### O Cypress encontra uncaught exception durante a execução dos testes
 
 Em alguns casos, o Cypress pode encontrar exceções não capturadas (erros de JavaScript) que fazem com que os testes falhem. Para continuar a execução dos testes, você pode usar o comando `Cypress.on('uncaught:exception', (err, runnable) => { return false })` para ignorar essas exceções.
 

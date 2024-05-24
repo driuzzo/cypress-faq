@@ -16,11 +16,11 @@ npm install
 
 ### O Cypress encontra uncaught exception durante a execução dos testes
 
-Em alguns casos, o Cypress pode encontrar exceções não capturadas (erros de JavaScript) que fazem com que os testes falhem. Para continuar a execução dos testes, você pode usar o comando `Cypress.on('uncaught:exception', (err, runnable) => { return false })` para ignorar essas exceções.
+Em alguns casos, o Cypress pode encontrar exceções não capturadas (erros de JavaScript) que faz o teste falhar. Para continuar a execução dos testes, você pode usar o comando `Cypress.on('uncaught:exception', (err, runnable) => { return false })` para ignorar essa exceção.
 
 #### Como usar `Cypress.on('uncaught:exception')`?
 
-Adicione o seguinte código no arquivo de configuração de suporte (`cypress/support/e2e.js`) para ignorar todas as exceções não capturadas:
+Adicione o comando abaixo no arquivo de configuração (`cypress/support/e2e.js`) para ignorar todas as exceções não capturadas:
 
 ```javascript
 Cypress.on('uncaught:exception', (err, runnable) => {

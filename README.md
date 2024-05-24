@@ -5,7 +5,7 @@ Este documento foi criado para ajudar a solucionar os problemas mais comuns ao u
 ## Geral
 ### O Cypress não abre após a instalação.
 
-Certifique-se de que você tenha a versão mínima necessária do Node.js e npm. Além disso, tente deletar a pasta `node_modules` e o arquivo `package-lock.json`, e então reinstale as dependências:
+Certifique-se de que você tenha a versão mínima necessária do Node.js e npm. Além disso, tente deletar a pasta `node_modules` e o arquivo `package-lock.json`, e então reinstale as dependências. Você pode deletar manualmente ou seguindo o comando abaixo:
 
 ```bash
 rm -rf node_modules package-lock.json

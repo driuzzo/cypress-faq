@@ -1,4 +1,4 @@
-## Cypress Brasil 🇧🇷 FAQ
+## Cypress Brasil 🇧🇷 FAQ teste
 
 Este documento foi criado para ajudar a solucionar os problemas mais comuns ao usar o Cypress. Se você não encontrar a resposta para sua pergunta aqui, fique à vontade para dar sugestões!
 

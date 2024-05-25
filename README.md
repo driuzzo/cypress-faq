@@ -2,6 +2,39 @@
 
 Este documento foi criado para ajudar a solucionar os problemas mais comuns ao usar o Cypress. Se você não encontrar a resposta para sua pergunta aqui, fique à vontade para dar sugestões!
 
+<details>
+  <summary>
+    <a>Geral</a>
+  </summary>
+  
+  <a name="geral"></a>
+  
+  - [Cypress não abre após a instalação](#o-cypress-não-abre-após-a-instalação)
+</details>
+
+<details>
+  <summary>
+    <a>force:true</a>
+  </summary>
+  
+  <a name="force:true"></a>
+  
+  - [force:true](#force-true)
+</details>
+
+<details>
+  <summary>
+    <a>uncaught exception</a>
+  </summary>
+  
+  <a name="force:true"></a>  
+  
+  - [uncaught exception](#lidando-com-uncaught-exception)
+</details>
+
+
+
+
 ## Geral
 ### O Cypress não abre após a instalação.
 
@@ -64,11 +97,11 @@ cy.get('seletor').click({ force: true });
 
 Ao seguir essas alternativas, você poderá criar testes mais robustos e evitar o uso do force: true, que pode mascarar problemas escondidos na aplicação.
 
-## Lidando com Exceções Não Capturadas
+## Lidando com uncaught exception
 
-### O Cypress encontra uncaught exception durante a execução dos testes
+### O Cypress exibe erro de uncaught exception durante a execução dos testes
 
-Em alguns casos, o Cypress pode encontrar exceções não capturadas (erros de JavaScript) que faz o teste falhar. Para continuar a execução dos testes, você pode usar o comando `Cypress.on('uncaught:exception', (err, runnable) => { return false })` para ignorar essa exceção.
+Em alguns casos, o Cypress pode encontrar exceções não capturadas (erros de JavaScript) que faz o teste falhar. Para continuar a execução dos testes, você pode usar um comando para ignorar essa exceção.
 
 #### Como usar `Cypress.on('uncaught:exception')`?
 

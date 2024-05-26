@@ -19,7 +19,7 @@ Este documento foi criado para ajudar a solucionar os problemas mais comuns ao u
   
   <a name="force:true"></a>
   
-  - [force:true](#force-true)
+  - [Evitando o uso do force:true](#force-true)
 </details>
 
 <details>
@@ -27,9 +27,9 @@ Este documento foi criado para ajudar a solucionar os problemas mais comuns ao u
     <a>uncaught exception</a>
   </summary>
   
-  <a name="force:true"></a>  
+  <a name="uncaught exception"></a>  
   
-  - [uncaught exception](#lidando-com-uncaught-exception)
+  - [Lidando com uncaught exception](#lidando-com-uncaught-exception)
 </details>
 
 
@@ -44,9 +44,7 @@ Certifique-se de que você tenha a versão mínima necessária do Node.js e npm.
 rm -rf node_modules package-lock.json
 npm install
 ```
-## force: true
-
-### Evitando o uso do force: true
+## Evitando o uso do force: true
 
 O `force: true` é usado quando o elemento a ser clicado está coberto ou fora de visualização. Ou seja, utilizar essa abordagem com frequência é uma má prática. Você pode usar algumas alternativas:
 

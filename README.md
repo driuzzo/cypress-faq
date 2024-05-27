@@ -1,6 +1,6 @@
 ## Cypress Brasil 🇧🇷 FAQ
 
-Este documento foi criado para ajudar a solucionar os problemas mais comuns ao usar o Cypress. Se você não encontrar a resposta para sua pergunta aqui, fique à vontade para dar sugestões!
+Este documento foi criado para ajudar a solucionar os problemas mais comuns ao usar o Cypress. Se você não encontrar a resposta para sua pergunta aqui, fique à vontade para abrir uma issue e dar sua sugestão!
 
 <details>
   <summary>
@@ -48,18 +48,18 @@ npm install
 
 O `force: true` é usado quando o elemento a ser clicado está coberto ou fora de visualização. Ou seja, utilizar essa abordagem com frequência é uma má prática. Você pode usar algumas alternativas:
 
-### Scroll até o elemento
-Se o elemento não estiver no topo, você pode usar o comando `scrollIntoView` para garantir que o elemento esteja visível na janela de visualização.
-
-```javascript
-cy.get('seletor').scrollIntoView().click();
-```
-
 ### Aguarde até que o elemento esteja visível:
 Pode ser que o elemento ainda não tenha sido renderizado na tela no momento do clique. Utilize should('be.visible') para garantir que o elemento esteja visível antes de tentar interagir com ele.
 
 ```javascript
 cy.get('seletor').should('be.visible').click();
+```
+
+### Scroll até o elemento
+Se o elemento não estiver no topo, você pode usar o comando `scrollIntoView` para garantir que o elemento esteja visível na janela de visualização.
+
+```javascript
+cy.get('seletor').scrollIntoView().click();
 ```
 
 ### Aguarde até que o elemento não esteja oculto:

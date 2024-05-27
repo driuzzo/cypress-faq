@@ -19,7 +19,7 @@ Este documento foi criado para ajudar a solucionar os problemas mais comuns ao u
   
   <a name="force:true"></a>
   
-  - [Evitando o uso do force:true](#force-true)
+  - [Evitando o uso do force:true](#evitando-o-uso-do-force-true)
 </details>
 
 <details>

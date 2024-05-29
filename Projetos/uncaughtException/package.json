@@ -1,0 +1,15 @@
+{
+  "name": "uncaughtexception",
+  "version": "1.0.0",
+  "description": "Exemplo de configuração do uncaught:exception",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "npx cypress open"
+  },
+  "author": "Leo Costa",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.10.0",
+    "cypress-plugin-xhr-toggle": "^1.2.1"
+  }
+}

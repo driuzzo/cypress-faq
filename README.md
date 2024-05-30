@@ -1,4 +1,7 @@
 ## Cypress Brasil 🇧🇷 FAQ
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Este documento foi criado para ajudar a solucionar os problemas mais comuns ao usar o Cypress. Se você não encontrar a resposta para sua pergunta aqui, fique à vontade para abrir uma issue e dar sua sugestão!
 
@@ -157,9 +160,16 @@ Agradecimentos aos colaboradores: ([emoji key](https://allcontributors.org/docs/
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <table>
-  <tr>
-    <td align="center"><a href="https://www.linkedin.com/in/adriano-driuzzo/"><img src="https://avatars.githubusercontent.com/u/16465816?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Adriano Driuzzo</b></sub></a><br /><a href="https://github.com/driuzzo/cypress-faq/commits?author=driuzzo" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/leolpc21"><img src="https://avatars.githubusercontent.com/u/43275999?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Leonardo Costa</b></sub></a><br /><a href="https://github.com/driuzzo/cypress-faq/commits?author=leolpc21" title="Code">💻</a></td>
-  </tr>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/leolpc21"><img src="https://avatars.githubusercontent.com/u/43275999?v=4?s=100" width="100px;" alt="Leonardo Costa"/><br /><sub><b>Leonardo Costa</b></sub></a><br /><a href="https://github.com/driuzzo/cypress-faq/commits?author=leolpc21" title="Code">💻</a></td>
+    </tr>
+  </tbody>
 </table>
 
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!

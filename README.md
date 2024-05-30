@@ -143,3 +143,23 @@ Cypress.on('uncaught:exception', (err, runnable) => {
   return true
 })
 ```
+
+
+Feito com ❤️ por Adriano Driuzzo 
+
+👋🏽 [Entre em contato!](https://www.linkedin.com/in/adriano-driuzzo/)
+
+## Colaboradores ✨
+
+Agradecimentos aos colaboradores: ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://www.linkedin.com/in/adriano-driuzzo/"><img src="https://avatars.githubusercontent.com/u/16465816?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Adriano Driuzzo</b></sub></a><br /><a href="https://github.com/driuzzo/cypress-faq/commits?author=driuzzo" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/leolpc21"><img src="https://avatars.githubusercontent.com/u/43275999?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Leonardo Costa</b></sub></a><br /><a href="https://github.com/driuzzo/cypress-faq/commits?author=leolpc21" title="Code">💻</a></td>
+  </tr>
+</table>
+

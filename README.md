@@ -162,8 +162,8 @@ Agradecimentos aos colaboradores: ([emoji key](https://allcontributors.org/docs/
 <table>
   <tbody>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/leolpc21"><img src="https://avatars.githubusercontent.com/u/43275999?v=4?s=100" width="100px;" alt="Leonardo Costa"/><br /><sub><b>Leonardo Costa</b></sub></a><br /><a href="https://github.com/driuzzo/cypress-faq/commits?author=leolpc21" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/driuzzo"><img src="https://avatars.githubusercontent.com/u/16465816?v=4?s=100" width="100px;" alt="Adriano Driuzzo"/><br /><sub><b>Adriano Driuzzo</b></sub></a><br /><a href="https://github.com/driuzzo/cypress-faq/commits?author=driuzzo" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/leolpc21"><img src="https://avatars.githubusercontent.com/u/43275999?v=4?s=100" width="100px;" alt="Leonardo Costa"/><br /><sub><b>Leonardo Costa</b></sub></a><br /><a href="https://github.com/driuzzo/cypress-faq/commits?author=leolpc21" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>

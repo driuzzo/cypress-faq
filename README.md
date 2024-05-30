@@ -5,6 +5,17 @@
 
 Este documento foi criado para ajudar a solucionar os problemas mais comuns ao usar o Cypress. Se você não encontrar a resposta para sua pergunta aqui, fique à vontade para abrir uma issue e dar sua sugestão!
 
+## Como contribuir 🤝
+
+Se você está interessado em ajudar no projeto, abra uma [issue](https://github.com/driuzzo/cypress-faq/issues) e explique qual tópico ou assunto você gostaria de adicionar.
+
+Você também pode enviar qualquer ideia/sugestão como issue.
+
+Todas as contribuições são muito bem-vindas!
+
+Leia nosso [guia de como contribuir](CONTRIBUTING.md).
+
+## Acesse o menu rápido abaixo:
 <details>
   <summary>
     <a>Geral</a>

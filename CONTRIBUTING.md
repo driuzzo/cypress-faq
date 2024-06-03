@@ -33,3 +33,12 @@ git checkout main
 git reset --hard upstream/main  
 git push origin main --force
 ```
+
+## Solução de problemas comuns
+
+Para atualizar a sua branch com as últimas alterações do repositório original, use:
+
+```bash
+git fetch upstream
+git pull upstream main
+```

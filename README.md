@@ -157,9 +157,6 @@ Cypress.on('uncaught:exception', (err, runnable) => {
   return true
 })
 ```
-## 
-Claro! Vamos ajustar o passo 2 para não utilizar arquivos de configuração JSON, mas configurar diretamente o `baseUrl` via linha de comando.
-
 ---
 
 ## Lidando com Múltiplos Ambientes com Cypress

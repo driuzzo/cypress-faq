@@ -157,7 +157,74 @@ Cypress.on('uncaught:exception', (err, runnable) => {
   return true
 })
 ```
+## 
+Claro! Vamos ajustar o passo 2 para não utilizar arquivos de configuração JSON, mas configurar diretamente o `baseUrl` via linha de comando.
 
+---
+
+## Lidando com Múltiplos Ambientes com Cypress
+
+Ao desenvolver aplicações web, é crucial garantir que seu código funcione corretamente em diferentes ambientes (desenvolvimento, homologação e produção). O Cypress oferece uma maneira flexível de lidar com múltiplos ambientes usando variáveis de ambiente e o parâmetro `baseUrl` na linha de comando (CLI).
+
+### Configuração do Ambiente
+
+1. **Configuração Dinâmica com `baseUrl` via CLI**: Modifique o `cypress.config.js` para aceitar o `baseUrl` passado pela CLI e qualquer outra configuração específica do ambiente.
+
+    ```javascript
+    const { defineConfig } = require('cypress');
+
+    module.exports = defineConfig({
+        e2e: {
+
+        baseUrl: 'http://staging.example.com', // url padrão, por exemplo: staging
+
+        }
+    });
+    ```
+
+### Executando Testes em Diferentes Ambientes
+
+Use scripts npm para executar testes em ambientes específicos, configurando o `baseUrl` diretamente na linha de comando.
+
+- **Desenvolvimento**: `npm run test:dev`
+- **Homologação**: `npm run test:staging`
+- **Produção**: `npm run test:prod`
+
+Defina esses scripts no seu `package.json`:
+
+```json
+"scripts": {
+    "test:dev": "cypress run --config baseUrl=http://localhost:3000",
+    "test:staging": "cypress run --config baseUrl=http://staging.example.com",
+    "test:prod": "cypress run --config baseUrl=http://example.com"
+}
+```
+
+### Exemplo de Teste
+
+Um exemplo de arquivo de teste (`cypress/e2e/configBaseUrl.cy.js`) que utiliza o `baseUrl` configurado:
+
+```javascript
+describe('Testes Específicos do Ambiente', () => {
+    it('Visita a aplicação', () => {
+        cy.visit('/');
+        cy.url().should('include', Cypress.config('baseUrl'));
+    });
+});
+```
+
+### Benefícios
+
+- **Consistência**: Garante testes consistentes em todos os ambientes.
+- **Flexibilidade**: Facilita a alternância entre diferentes configurações.
+- **Escalabilidade**: Simplifica o gerenciamento de configurações conforme sua aplicação cresce.
+
+Seguindo essa configuração, você pode testar sua aplicação eficientemente em múltiplos ambientes, garantindo maior confiabilidade e desempenho em todas as fases de implantação.
+
+---
+
+Essa explicação fornece uma visão geral clara do processo, ajudando outros a entender como implementar e se beneficiar dos testes multi-ambiente com Cypress, utilizando o `baseUrl` via CLI.
+___
 
 Feito com ❤️ por Adriano Driuzzo 
 

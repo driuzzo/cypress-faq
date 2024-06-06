@@ -4,7 +4,10 @@
   "description": "Exemplo de configuração do uncaught:exception",
   "main": "index.js",
   "scripts": {
-    "cy:open": "npx cypress open"
+    "cy:open": "npx cypress open",
+    "test:dev": "cypress run --config baseUrl=http://localhost:3000",
+    "test:staging": "cypress run --config baseUrl=http://staging.example.com",
+    "test:prod": "cypress run --config baseUrl=http://example.com"
   },
   "author": "Leo Costa",
   "license": "ISC",

@@ -1,0 +1,15 @@
+{
+  "name": "multiplosambientes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "npx cypress open",
+    "test:dev": "cypress run --config baseUrl=https://www.asus.com/support/",
+    "test:staging": "cypress run --config baseUrl=https://www.asus.com/",
+    "test:prod": "cypress run --config baseUrl=https://www.asus.com/content/asus-software/"
+  },
+  "author": "",
+  "license": "ISC"
+}

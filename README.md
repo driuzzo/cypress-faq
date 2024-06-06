@@ -161,7 +161,7 @@ Cypress.on('uncaught:exception', (err, runnable) => {
 
 ## Lidando com Múltiplos Ambientes com Cypress
 
-Ao desenvolver aplicações web, é crucial garantir que seu código funcione corretamente em diferentes ambientes (desenvolvimento, homologação e produção). O Cypress oferece uma maneira flexível de lidar com múltiplos ambientes usando variáveis de ambiente e o parâmetro `baseUrl` na linha de comando (CLI).
+Para rodar o mesmo projeto em ambientes diferentes, você pode configurar uma baseUrl e depois apontar o ambiente desejado ao rodar os scripts via linha de comando.
 
 ### Configuração do Ambiente
 
@@ -209,16 +209,6 @@ describe('Testes Específicos do Ambiente', () => {
     });
 });
 ```
-
-### Benefícios
-
-- **Consistência**: Garante testes consistentes em todos os ambientes.
-- **Flexibilidade**: Facilita a alternância entre diferentes configurações.
-- **Escalabilidade**: Simplifica o gerenciamento de configurações conforme sua aplicação cresce.
-
-Seguindo essa configuração, você pode testar sua aplicação eficientemente em múltiplos ambientes, garantindo maior confiabilidade e desempenho em todas as fases de implantação.
-
----
 
 Essa explicação fornece uma visão geral clara do processo, ajudando outros a entender como implementar e se beneficiar dos testes multi-ambiente com Cypress, utilizando o `baseUrl` via CLI.
 ___

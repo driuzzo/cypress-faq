@@ -46,6 +46,15 @@ Leia nosso [guia de como contribuir](CONTRIBUTING.md).
   - [Lidando com uncaught exception](#lidando-com-uncaught-exception)
 </details>
 
+<details>
+  <summary>
+    <a>múltiplos ambientes</a>
+  </summary>
+
+  <a name="multiplos ambientes"></a>
+
+  - [Lidando com múltiplos ambientes com Cypress](#lidando-com-múltiplos-ambientes-com-cypress)
+</details>
 
 
 
@@ -209,8 +218,6 @@ describe('Testes Específicos do Ambiente', () => {
     });
 });
 ```
-
-Essa explicação fornece uma visão geral clara do processo, ajudando outros a entender como implementar e se beneficiar dos testes multi-ambiente com Cypress, utilizando o `baseUrl` via CLI.
 ___
 
 Feito com ❤️ por Adriano Driuzzo 

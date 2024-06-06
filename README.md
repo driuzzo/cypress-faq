@@ -43,7 +43,7 @@ Leia nosso [guia de como contribuir](CONTRIBUTING.md).
   
   <a name="uncaught exception"></a>  
   
-  - [Lidando com uncaught exception](#lidando-com-uncaught-exception)
+  - [Lidando com uncaught exception](projetos/uncaughtException/README.md)
 </details>
 
 <details>
@@ -53,7 +53,7 @@ Leia nosso [guia de como contribuir](CONTRIBUTING.md).
 
   <a name="multiplos ambientes"></a>
 
-  - [Lidando com múltiplos ambientes com Cypress](#lidando-com-múltiplos-ambientes-com-cypress)
+  - [Lidando com múltiplos ambientes com Cypress](projetos/multiplosAmbientes/README.md)
 </details>
 
 
@@ -118,106 +118,6 @@ cy.get('seletor').click({ force: true });
 
 Ao seguir essas alternativas, você poderá criar testes mais robustos e evitar o uso do force: true, que pode mascarar problemas escondidos na aplicação.
 
-## Lidando com uncaught exception
-
-### O Cypress exibe erro de uncaught exception durante a execução dos testes
-
-Em alguns casos, o Cypress pode encontrar exceções não capturadas (erros de JavaScript) que faz o teste falhar. Para continuar a execução dos testes, você pode usar um comando para ignorar essa exceção.
-
-#### Como usar `Cypress.on('uncaught:exception')`?
-
-Adicione o comando abaixo no arquivo de configuração (`cypress/support/e2e.js`) para ignorar todas as exceções não capturadas:
-
-```javascript
-Cypress.on('uncaught:exception', (err, runnable) => {
-  // Retorna false para impedir que o Cypress falhe o teste
-  return false
-})
-```
-### Quando devo usar esta abordagem?
-
-Essa abordagem deve ser usada com cuidado. Ignorar exceções pode ocultar problemas reais que precisam ser corrigidos na sua aplicação. Use se você sabe que é um erro conhecido que não afeta os testes que você está executando.
-
-### Há alguma alternativa para lidar com exceções específicas?
-
-Sim, se você quiser lidar com exceções específicas, você pode adicionar lógica dentro da função de callback para filtrar erros dependendo da mensagem ou outros atributos:
-
-```javascript
-Cypress.on('uncaught:exception', (err, runnable) => {
-  // Ignora exceções específicas com base na mensagem de erro
-  if (err.message.includes('Expected error message')) {
-    return false
-  }
-  // Permite que outras exceções interrompam os testes
-  return true
-})
-```
-### Exemplo Prático
-
-O exemplo abaixo ignora um erro específico de uma biblioteca de terceiros, mas permite que outras exceções interrompam os testes:
-
-```javascript
-Cypress.on('uncaught:exception', (err, runnable) => {
-  // Ignora erros da biblioteca 'ResizeObserver'
-  if (err.message.includes('ResizeObserver loop limit exceeded')) {
-    return false
-  }
-  // Permite que outras exceções interrompam os testes
-  return true
-})
-```
----
-
-## Lidando com Múltiplos Ambientes com Cypress
-
-Para rodar o mesmo projeto em ambientes diferentes, você pode configurar uma baseUrl e depois apontar o ambiente desejado ao rodar os scripts via linha de comando.
-
-### Configuração do Ambiente
-
-1. **Configuração Dinâmica com `baseUrl` via CLI**: Modifique o `cypress.config.js` para aceitar o `baseUrl` passado pela CLI e qualquer outra configuração específica do ambiente.
-
-    ```javascript
-    const { defineConfig } = require('cypress');
-
-    module.exports = defineConfig({
-        e2e: {
-
-        baseUrl: 'http://staging.example.com', // url padrão, por exemplo: staging
-
-        }
-    });
-    ```
-
-### Executando Testes em Diferentes Ambientes
-
-Use scripts npm para executar testes em ambientes específicos, configurando o `baseUrl` diretamente na linha de comando.
-
-- **Desenvolvimento**: `npm run test:dev`
-- **Homologação**: `npm run test:staging`
-- **Produção**: `npm run test:prod`
-
-Defina esses scripts no seu `package.json`:
-
-```json
-"scripts": {
-    "test:dev": "cypress run --config baseUrl=http://localhost:3000",
-    "test:staging": "cypress run --config baseUrl=http://staging.example.com",
-    "test:prod": "cypress run --config baseUrl=http://example.com"
-}
-```
-
-### Exemplo de Teste
-
-Um exemplo de arquivo de teste (`cypress/e2e/configBaseUrl.cy.js`) que utiliza o `baseUrl` configurado:
-
-```javascript
-describe('Testes Específicos do Ambiente', () => {
-    it('Visita a aplicação', () => {
-        cy.visit('/');
-        cy.url().should('include', Cypress.config('baseUrl'));
-    });
-});
-```
 ___
 
 Feito com ❤️ por Adriano Driuzzo 

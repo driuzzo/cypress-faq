@@ -4,15 +4,7 @@
   "description": "Repositório criado para ser usado como um FAQ do framework Cypress",
   "main": "index.js",
   "scripts": {
-    "cy:open": "npx cypress open",
-    "test:dev": "cypress run --config baseUrl=https://www.asus.com/support/",
-    "test:staging": "cypress run --config baseUrl=https://www.asus.com/",
-    "test:prod": "cypress run --config baseUrl=https://www.asus.com/content/asus-software/"
   },
   "author": "cypress-faq",
-  "license": "MIT",
-  "dependencies": {
-    "cypress": "^13.10.0",
-    "cypress-plugin-xhr-toggle": "^1.2.1"
-  }
+  "license": "MIT"
 }

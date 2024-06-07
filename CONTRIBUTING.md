@@ -42,7 +42,7 @@ npm install cypress --save-dev
 
 12. Crie um arquivo README.md dentro da sua pasta e adicione o texto do assunto a ser tratado.
 
-13. Caso sua contribuição tenha apenas texto, você pode adicionar o conteúdo no arquivo README.md na raiz do projeto.
+13. Caso sua contribuição não tenha código para ser executado, você pode adicionar o conteúdo no arquivo README.md na raiz do projeto.
 
 14. Salve as alterações e crie uma mensagem de commit contando o que você fez:
 ```bash
